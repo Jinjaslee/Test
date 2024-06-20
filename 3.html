@@ -7,13 +7,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1><a href="index.html">Web</a></h1>
+    <div id="button-div">
+        <input id="button" type="button" value="다크모드 ON" onclick="
+          var target = document.querySelector('body');
+          if(this.value === '다크모드 ON'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = '다크모드 OFF';
+          } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = '다크모드 ON';
+          }
+        ">
+        </div>
+        <h1><a class="head" href="index.html">Web</a></h1>
     <div id="grid">
         <div>
             <ol>
                 <li><a href="1.html" class="saw">HTML</a></li>
-                <li><a href="2.html" class="saw" id="active">CSS</a></li>
-                <li><a href="3.html">JavaScript</a></li>
+                <li><a href="2.html" class="saw">CSS</a></li>
+                <li><a href="3.html" class="saw">JavaScript</a></li>
             </ol>
         </div>
         <div id="article">

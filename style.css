@@ -1,13 +1,19 @@
+*{
+    text-decoration-line: none;
+    color: inherit;
+}
+#button-div{
+    text-align: center;
+}
+#button{
+    color: black;
+}
 #grid{
     display: grid;
     grid-template-columns: 150px 1fr;
 }
 body{
     margin:0;
-}
-a{
-    color: black;
-    text-decoration: none;
 }
 h1{
     font-size: 45px;
